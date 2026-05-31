@@ -1,0 +1,44 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - img [ref=e7]
+    - heading "Set Your Rent Target" [level=1] [ref=e11]
+    - paragraph [ref=e12]: Launch your rent savings mission
+  - generic [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e15]: Select Currency
+      - generic [ref=e16]:
+        - button "$ USD" [ref=e17] [cursor=pointer]:
+          - generic [ref=e18]: $
+          - generic [ref=e19]: USD
+        - button "₦ NGN" [active] [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: ₦
+          - generic [ref=e22]: NGN
+        - button "£ GBP" [ref=e23] [cursor=pointer]:
+          - generic [ref=e24]: £
+          - generic [ref=e25]: GBP
+        - button "€ EUR" [ref=e26] [cursor=pointer]:
+          - generic [ref=e27]: €
+          - generic [ref=e28]: EUR
+    - generic [ref=e29]:
+      - generic [ref=e30]: Target Rent Amount
+      - generic [ref=e31]:
+        - generic:
+          - generic: ₦
+        - spinbutton [ref=e32]
+    - generic [ref=e33]:
+      - generic [ref=e34]: Deadline
+      - generic [ref=e35]:
+        - generic:
+          - img
+        - textbox [ref=e36]
+    - generic [ref=e37]:
+      - generic [ref=e38]: Starting Balance (Optional)
+      - generic [ref=e39]:
+        - generic:
+          - generic: ₦
+        - spinbutton [ref=e40]: "0"
+      - paragraph [ref=e41]: Already have some savings? Include them here.
+    - button "Start Tracking" [ref=e42] [cursor=pointer]:
+      - img [ref=e43]
+      - text: Start Tracking
+  - paragraph [ref=e48]: Data is stored locally in your browser

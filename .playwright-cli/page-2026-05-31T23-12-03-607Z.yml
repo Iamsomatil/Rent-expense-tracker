@@ -1,0 +1,96 @@
+- generic [ref=e49]:
+  - generic [ref=e50]:
+    - generic [ref=e52]:
+      - generic [ref=e54]:
+        - img [ref=e55]
+        - generic [ref=e58]:
+          - generic [ref=e59]: 29%
+          - generic [ref=e60]: Progress
+      - generic [ref=e61]:
+        - img [ref=e62]
+        - generic [ref=e65]: On Track
+      - generic [ref=e66]:
+        - paragraph [ref=e67]: Amount Remaining
+        - paragraph [ref=e68]: ₦2,500,000
+      - generic [ref=e69]:
+        - img [ref=e70]
+        - generic [ref=e73]: 60 days left
+      - paragraph [ref=e74]: You're on track to meet your target
+    - generic [ref=e75]:
+      - heading "Milestones" [level=3] [ref=e76]
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - img [ref=e80]
+          - generic [ref=e85]: 25%
+          - generic [ref=e86]: Launch
+        - generic [ref=e87]:
+          - img [ref=e89]
+          - generic [ref=e91]: 50%
+          - generic [ref=e92]: Halfway
+        - generic [ref=e93]:
+          - img [ref=e95]
+          - generic [ref=e99]: 75%
+          - generic [ref=e100]: Near Target
+        - generic [ref=e101]:
+          - img [ref=e103]
+          - generic [ref=e109]: 100%
+          - generic [ref=e110]: Goal Reached
+    - generic [ref=e111]:
+      - generic [ref=e113]:
+        - generic [ref=e114]:
+          - paragraph [ref=e115]: Target
+          - paragraph [ref=e116]: ₦3,500,000
+        - img [ref=e118]
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - paragraph [ref=e125]: Net Saved
+          - paragraph [ref=e126]: ₦1,000,000
+          - paragraph [ref=e127]: +₦1,000,000 savings
+        - img [ref=e129]
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - paragraph [ref=e135]: Total Expenses
+          - paragraph [ref=e136]: ₦0
+        - img [ref=e138]
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - paragraph [ref=e144]: Deadline
+          - paragraph [ref=e145]: Jul 31, 2026
+          - paragraph [ref=e146]: 60 days left
+        - img [ref=e148]
+    - generic [ref=e150]:
+      - heading "Required Savings Pace" [level=3] [ref=e151]
+      - generic [ref=e152]:
+        - generic [ref=e153]:
+          - paragraph [ref=e154]: ₦41,666.67
+          - paragraph [ref=e155]: Per Day
+        - generic [ref=e156]:
+          - paragraph [ref=e157]: ₦291,666.67
+          - paragraph [ref=e158]: Per Week
+        - generic [ref=e159]:
+          - paragraph [ref=e160]: ₦1,268,333.33
+          - paragraph [ref=e161]: Per Month
+      - paragraph [ref=e162]: Monthly pace uses a 30.44-day average month.
+    - generic [ref=e163]:
+      - heading "Recent Activity" [level=3] [ref=e165]
+      - generic [ref=e166]:
+        - img [ref=e167]
+        - paragraph [ref=e170]: No transactions yet
+        - paragraph [ref=e171]: Add your first savings or expense
+  - navigation [ref=e172]:
+    - generic [ref=e173]:
+      - button "Home" [ref=e174] [cursor=pointer]:
+        - img [ref=e175]
+        - generic [ref=e180]: Home
+      - button "Add" [ref=e181] [cursor=pointer]:
+        - img [ref=e182]
+        - generic [ref=e184]: Add
+      - button "History" [ref=e185] [cursor=pointer]:
+        - img [ref=e186]
+        - generic [ref=e187]: History
+      - button "Insights" [ref=e188] [cursor=pointer]:
+        - img [ref=e189]
+        - generic [ref=e191]: Insights
+      - button "Settings" [ref=e192] [cursor=pointer]:
+        - img [ref=e193]
+        - generic [ref=e196]: Settings

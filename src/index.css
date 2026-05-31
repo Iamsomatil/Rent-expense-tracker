@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --cyber-cyan: #00f5ff;
+    --cyber-blue: #00a8ff;
+    --neon-emerald: #10b981;
+    --neon-red: #ef4444;
+    --neon-amber: #fbbf24;
+    --neon-purple: #a855f7;
+  }
+
+  * {
+    @apply border-space-600;
+  }
+
+  body {
+    @apply bg-space-900 text-white antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-space-700/50 backdrop-blur-xl border border-space-500/30 rounded-2xl;
+  }
+
+  .glass-panel {
+    @apply bg-space-800/80 backdrop-blur-lg border border-space-500/20 rounded-xl;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+  }
+
+  .glow-border {
+    box-shadow: 0 0 0 1px currentColor, 0 0 15px currentColor;
+  }
+
+  .status-badge {
+    @apply px-4 py-1.5 rounded-full text-sm font-semibold uppercase tracking-wider;
+  }
+
+  .btn-primary {
+    @apply bg-cyber-cyan/20 hover:bg-cyber-cyan/30 text-cyber-cyan border border-cyber-cyan/50
+           px-6 py-3 rounded-xl font-semibold transition-all duration-200
+           hover:shadow-glow-cyan active:scale-95;
+  }
+
+  .btn-danger {
+    @apply bg-neon-red/20 hover:bg-neon-red/30 text-neon-red border border-neon-red/50
+           px-4 py-2 rounded-xl font-medium transition-all duration-200
+           hover:shadow-glow-red active:scale-95;
+  }
+
+  .btn-success {
+    @apply bg-neon-emerald/20 hover:bg-neon-emerald/30 text-neon-emerald border border-neon-emerald/50
+           px-6 py-3 rounded-xl font-semibold transition-all duration-200
+           hover:shadow-glow-emerald active:scale-95;
+  }
+
+  .input-field {
+    @apply w-full bg-space-800/50 border border-space-500/50 rounded-xl px-4 py-3
+           text-white placeholder-gray-500 focus:border-cyber-cyan/50 focus:ring-1
+           focus:ring-cyber-cyan/30 focus:outline-none transition-all duration-200;
+  }
+
+  .segmented-control {
+    @apply flex bg-space-800/50 rounded-xl p-1 border border-space-500/30;
+  }
+
+  .segmented-option {
+    @apply flex-1 py-2.5 px-4 rounded-lg text-center font-medium transition-all duration-200 cursor-pointer;
+  }
+
+  .segmented-option-active {
+    @apply bg-space-600 text-white;
+  }
+
+  .metric-card {
+    @apply glass-panel p-4 hover:border-space-500/50 transition-all duration-200;
+  }
+
+  .progress-ring {
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+
+  .transaction-card {
+    @apply glass-panel p-4 hover:border-space-500/50 transition-all duration-200 cursor-pointer;
+  }
+
+  .nav-item {
+    @apply flex flex-col items-center gap-1 px-4 py-2 rounded-xl transition-all duration-200;
+  }
+
+  .nav-item-active {
+    @apply bg-space-600/50 text-cyber-cyan;
+  }
+
+  .modal-overlay {
+    @apply fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4;
+  }
+
+  .modal-content {
+    @apply glass-card w-full max-w-md p-6 animate-scale-in;
+  }
+}
+
+@layer utilities {
+  .text-gradient-cyan {
+    @apply bg-gradient-to-r from-cyber-cyan to-cyber-blue bg-clip-text text-transparent;
+  }
+
+  .text-gradient-emerald {
+    @apply bg-gradient-to-r from-neon-emerald to-neon-green bg-clip-text text-transparent;
+  }
+
+  .text-gradient-purple {
+    @apply bg-gradient-to-r from-cyber-purple to-neon-purple bg-clip-text text-transparent;
+  }
+
+  .overflow-hidden {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  filter: invert(0.7) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
