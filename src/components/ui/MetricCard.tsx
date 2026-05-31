@@ -27,11 +27,11 @@ export const MetricCard: React.FC<MetricCardProps> = ({
   };
 
   return (
-    <div className={`metric-card ${className}`}>
+    <div className={`metric-card min-w-0 ${className}`}>
       <div className="flex items-start justify-between">
         <div className="flex-1">
           <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">{label}</p>
-          <p className={`text-xl font-bold font-mono ${trend ? trendColors[trend] : 'text-white'}`}>
+          <p className={`text-xl font-bold font-mono break-words min-w-0 ${trend ? trendColors[trend] : 'text-white'}`}>
             {value}
           </p>
           {subValue && (

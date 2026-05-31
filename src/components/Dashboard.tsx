@@ -172,21 +172,21 @@ export const Dashboard: React.FC<DashboardProps> = ({
           <h3 className="text-xs text-gray-400 uppercase tracking-wider mb-3">
             Required Savings Pace
           </h3>
-          <div className="grid grid-cols-3 gap-3">
-            <div className="text-center">
-              <p className="text-2xl font-bold font-mono text-cyber-cyan">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="text-center p-3 rounded-lg bg-space-700/10">
+              <p className="text-2xl sm:text-3xl font-bold font-mono text-cyber-cyan break-words min-w-0">
                 {formatCurrency(metrics.requiredDailySavings, currency)}
               </p>
               <p className="text-xs text-gray-500 mt-1">Per Day</p>
             </div>
-            <div className="text-center">
-              <p className="text-2xl font-bold font-mono text-cyber-blue">
+            <div className="text-center p-3 rounded-lg bg-space-700/10">
+              <p className="text-2xl sm:text-3xl font-bold font-mono text-cyber-blue break-words min-w-0">
                 {formatCurrency(metrics.requiredWeeklySavings, currency)}
               </p>
               <p className="text-xs text-gray-500 mt-1">Per Week</p>
             </div>
-            <div className="text-center">
-              <p className="text-2xl font-bold font-mono text-neon-purple">
+            <div className="text-center p-3 rounded-lg bg-space-700/10">
+              <p className="text-2xl sm:text-3xl font-bold font-mono text-neon-purple break-words min-w-0">
                 {formatCurrency(metrics.requiredMonthlySavings, currency)}
               </p>
               <p className="text-xs text-gray-500 mt-1">Per Month</p>
